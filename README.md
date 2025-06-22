@@ -1,17 +1,15 @@
-**Brain Tumour Detection Flask App with AI Model** 
 
----
-
-```markdown
 # 🧠 Brain Tumour Detection Web App
 
-An AI-powered Flask web application for detecting brain tumours from MRI images using a deep learning model (EfficientNetB3). The system classifies images into one of four categories: **Glioma**, **Meningioma**, **Pituitary Tumour**, or **No Tumour**.
+An AI-powered Flask application for classifying brain MRI images into four tumour categories using a deep learning model (EfficientNetB3).
+
+![Brain Tumour Detection](https://img.shields.io/badge/Brain%20Tumour%20Detection-EfficientNetB3-blue)
 
 ---
 
 ## 📸 Demo Preview
 
-> 👉 Upload your brain MRI image and get instant tumour prediction with confidence score, tumour type information, and visual explanation.
+> Upload an MRI image and get an instant tumour type prediction with confidence score.
 
 ---
 
@@ -20,12 +18,12 @@ An AI-powered Flask web application for detecting brain tumours from MRI images 
 ```
 
 brain\_tumour\_app/
-├── app.py                     # Flask application backend
+├── app.py                     # Flask backend
 ├── templates/
-│   └── index.html             # Frontend interface (Bootstrap enhanced)
+│   └── index.html             # Bootstrap-enhanced UI
 ├── static/
-│   └── uploads/               # Folder for uploaded images
-├── brain\_tumour\_best\_model.h5 # Pre-trained AI model (download externally)
+│   └── uploads/               # Uploaded images
+├── brain\_tumour\_best\_model.h5 # AI model (hosted externally)
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project documentation
 
@@ -33,129 +31,118 @@ brain\_tumour\_app/
 
 ---
 
-## 📥 Resources
+## 📦 Download Dataset & Model
 
-### 📦 Download Dataset & Trained Model
+🚨 Due to GitHub's 100MB file limit, model and dataset files are hosted externally:
 
-Due to file size limitations on GitHub, the trained model and dataset are hosted on Google Drive.  
-👉 [📥 Download Dataset and Model Folder](https://drive.google.com/drive/folders/1ruIQL1c94TbVwUn_clVVd36WGpWE0I2C?usp=sharing)
+👉 [📥 Download from Google Drive](https://drive.google.com/drive/folders/1ruIQL1c94TbVwUn_clVVd36WGpWE0I2C?usp=sharing)
 
-- Place the **dataset** inside `datasets/` directory.
-- Place `brain_tumour_best_model.h5` inside your project root folder.
+- Place `brain_tumour_best_model.h5` in your project root directory.
+- Dataset folder as needed for retraining or analysis.
 
 ---
 
 ## 🚀 Features
 
-- 📤 Upload MRI images via web interface
-- 🧠 Predict tumour type with confidence score
-- 📊 Classifies into:
-  - Glioma
-  - Meningioma
-  - Pituitary Tumour
-  - No Tumour
-- 🎨 Clean animated Bootstrap frontend
-- 📈 AI model built with EfficientNetB3 + Transfer Learning
-- 🔥 Heatmap visual explanation support (Grad-CAM ready)
+- 📤 Upload brain MRI images via web interface.
+- 📈 Predict tumour type with confidence score.
+- 🧠 Supports 4 classes:
+  - **Glioma**
+  - **Meningioma**
+  - **Pituitary Tumour**
+  - **No Tumour**
+- ✨ Clean, animated Bootstrap 5 UI.
+- 📊 Displays prediction result and uploaded image.
+- 🔥 AI model built using EfficientNetB3 and Transfer Learning.
 
 ---
 
 ## 📊 AI Model Details
 
-- **Architecture:** EfficientNetB3  
-- **Trained on:** Custom Brain MRI dataset (Google Drive link above)
-- **Accuracy:** Achieved **95.35% final test accuracy**
+- **Architecture:** EfficientNetB3
+- **Trained On:** Brain MRI dataset (available via Drive)
+- **Accuracy:** 95.35% (Test Data)
 - **Framework:** TensorFlow / Keras
 
-**Model Features:**
-- Transfer learning from ImageNet
-- Data augmentation (rotation, flipping, zoom)
+**Features:**
+- Data Augmentation: Rotation, flipping, zooming.
+- Optimizers: Adam
+- Loss Function: Categorical Crossentropy
 - Callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
-- Normalization to scale input images
+- Training Epochs: 30
 
 ---
 
 ## 📦 Dependencies
 
-Install project dependencies using:
-
 ```bash
 pip install -r requirements.txt
 ````
 
-**Key Libraries:**
+**Main Libraries:**
 
 * Flask
 * TensorFlow / Keras
 * numpy
 * Pillow
-* Bootstrap 5 (CDN via HTML)
+* Bootstrap (via CDN)
 
 ---
 
-## 🖥️ Run the Application
-
-After setting up dependencies and placing the model:
+## 🖥️ Run Locally
 
 ```bash
 python app.py
 ```
 
-Visit `http://127.0.0.1:5000/` in your browser to access the app.
+Then open your browser at `http://127.0.0.1:5000/`
 
 ---
 
-## 📈 Results & Evaluation
+## 📈 Results
 
-* 📊 Final test accuracy: **95.35%**
-* 📋 Classification report with precision, recall, and f1-score
-* 📊 Confusion matrix visualization
-* 📉 Accuracy and loss graphs over epochs
-* 📌 Per-class performance metrics:
-
-  * Glioma: 18.30%
-  * Meningioma: 25.42%
-  * No Tumour: 28.57%
-  * Pituitary: 20.05%
+* **Test Accuracy:** 95.35%
+* **Classification Report:** Precision, Recall, F1-Score
+* **Confusion Matrix**
+* **Grad-CAM Heatmap (optional)**
 
 ---
 
 ## 🎯 Impact
 
-Early detection of brain tumours is crucial in improving treatment outcomes. This AI system assists radiologists and healthcare professionals by providing:
+Early detection of brain tumours is crucial for improved outcomes. This AI-powered solution provides:
 
-* Faster diagnoses
-* Improved consistency
-* Automated second-opinion tool
-  Ideal for deployment in low-resource hospitals and telemedicine solutions.
+* 📉 Faster, automated MRI analysis
+* 📈 High accuracy diagnostic assistance
+* 💻 Scalable and lightweight deployment
 
 ---
 
 ## 📢 Author
 
 **P. Yaswanth Kumar**
-GitHub: [yaswanthKumar44](https://github.com/yaswanthKumar44)
+[GitHub Profile](https://github.com/yaswanthKumar44)
 
 ---
 
 ## 📜 License
 
-Open-source project — feel free to fork, modify and contribute.
+Open-source project — fork, modify and contribute!
 
 ---
 
 ## 📌 Notes
 
-* Model files >100MB are hosted externally (Drive link above)
-* Ensure required folders like `static/uploads/` exist for image uploads
-* For Grad-CAM visualizations, optionally enable the Grad-CAM section in `app.py`
+* Files over 100MB are hosted via Google Drive (link above)
+* Ensure `static/uploads/` directory exists before running the app.
+* Grad-CAM explanation images can be optionally implemented.
 
 ---
 
-## ⭐ Star This Repository
+## ⭐ Star This Repo
 
-If you found this useful — please ⭐ star this repo and share it!
+If you like this project — please ⭐ star this repository and share it!
+
+---
 
 ```
-
----
