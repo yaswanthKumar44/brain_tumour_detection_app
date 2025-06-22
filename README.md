@@ -104,7 +104,7 @@ Then open your browser at `http://127.0.0.1:5000/`
 * **Test Accuracy:** 95.35%
 * **Classification Report:** Precision, Recall, F1-Score
 * **Confusion Matrix**
-* **Grad-CAM Heatmap (optional)**
+
 
 ---
 
@@ -145,4 +145,3 @@ If you like this project — please ⭐ star this repository and share it!
 
 ---
 
-```
