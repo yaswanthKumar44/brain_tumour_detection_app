@@ -1,0 +1,9 @@
+Flask==3.0.3
+tensorflow==2.16.1
+keras==3.3.3
+efficientnet==1.1.1
+opencv-python==4.10.0.82
+numpy==1.26.4
+matplotlib==3.9.0
+Pillow==10.3.0
+google-colab
