@@ -1,4 +1,4 @@
-**Brain Tumour Detection Flask App with AI Model**
+**Brain Tumour Detection Flask App with AI Model** 
 
 ---
 
@@ -56,7 +56,7 @@ Due to file size limitations on GitHub, the trained model and dataset are hosted
   - No Tumour
 - 🎨 Clean animated Bootstrap frontend
 - 📈 AI model built with EfficientNetB3 + Transfer Learning
-
+- 🔥 Heatmap visual explanation support (Grad-CAM ready)
 
 ---
 
@@ -159,4 +159,3 @@ If you found this useful — please ⭐ star this repo and share it!
 ```
 
 ---
-
