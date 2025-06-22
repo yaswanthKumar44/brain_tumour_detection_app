@@ -10,7 +10,7 @@ An AI-powered Flask application for classifying brain MRI images into four tumou
 ## 📸 Demo Preview
 
 > Upload an MRI image and get an instant tumour type prediction with confidence score.
-
+>https://www.linkedin.com/posts/yaswanth-kumar-peddagamalla-91443a288_ai-deeplearning-braintumourdetection-activity-7342469305499795457-qnnB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXU66ABDU8KUG62xAonIZM7Pv4L0HRaOVs
 ---
 
 ## 📂 Project Structure
